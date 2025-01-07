@@ -56,6 +56,7 @@ resource "aws_instance" "Kafka-Client-EC2-Instance" {
     local.common-tags,
     map(
       "Name", "Kafka-Client-EC2-Instance"
+      "Enviroment", "Prod"
     )
   )
 }
